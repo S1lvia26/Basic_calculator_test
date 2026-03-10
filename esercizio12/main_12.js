@@ -7,6 +7,20 @@
 
 // EXTRA Al click sul tasto per ottenere il risultato svuotare gli input e inserire nel primo input il valore del risultato in modo tale da far continuare all’utente i calcoli
 
+
+// per tesi/////////////////////////////////////////////////////////////
+// genera il QR code
+new QRCode(document.getElementById("qrcode"), {
+    text: "https://s1lvia26.github.io/Basic_calculator_test/esercizio12/ciao.html",
+    width: 200,
+    height: 200
+});
+
+/////////////////////////////////////////////////////////////////////
+
+
+
+
 let num1= document.querySelector('#num1');
 let num2= document.querySelector('#num2');
 let petSelect= document.querySelector('#pet-select');
@@ -54,4 +68,5 @@ function divisioni (valore1,valore2) {
         num2.value= '';
         num1.value= Number(total.value);
      } 
+
 })
